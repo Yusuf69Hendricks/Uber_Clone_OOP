@@ -37,7 +37,14 @@ public class Database {
         }
         System.out.print(" ]");
     }
-    //methods
+
+}
+
+
+
+
+
+    // methods
     public void getDriversArray() {
 
         try {
@@ -52,7 +59,7 @@ public class Database {
                     Car car = new Car(data[5].trim(), data[6].trim(), data[7].trim(), data[8].trim());
                   
                     Driver driver = new Driver(car, data[0].trim(), data[1].trim(), data[2].trim(), data[3].trim(), Integer.parseInt(data[4].trim()));
-               
+                    // BASICALLY ADDING A VARIABLE INTO ANOTHER VARAIBLE
 
                     if(data[8].trim().equals("X")) {
                         this.numberOfX++;

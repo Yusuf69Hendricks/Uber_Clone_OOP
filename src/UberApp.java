@@ -17,7 +17,7 @@ public class UberApp {
         System.out.println("Please vehicle of your choice, either XL or X");
         String vehicleType = sc.nextLine();
         
-        System.out.print("Starting Point: ");
+        System.out.println("start pont")
         System.out.print(startPoint);
         System.out.print("\nEnd Point: ");
         System.out.print(endPoint);
@@ -26,6 +26,7 @@ public class UberApp {
         System.out.println("");
 
         UberRide uberRide = new UberRide(startPoint, endPoint, lonwabo);
+        // Basically creating a new function with different objects within it.
 
         Driver assignedDriver = uberRide.assignDriver();
 
